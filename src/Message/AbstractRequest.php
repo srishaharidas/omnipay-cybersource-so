@@ -18,22 +18,22 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 
     public function getMerchantId()
     {
-        return $this->getParameter('merchant_id');
+        return $this->getParameter('merchantId');
     }
 
     public function getMerchantKey()
     {
-        return $this->getParameter('merchant_key');
+        return $this->getParameter('merchantKey');
     }
 
     public function setMerchantId($value)
     {
-        return $this->setParameter('merchant_id', $value);
+        return $this->setParameter('merchantId', $value);
     }
 
     public function setMerchantKey($value)
     {
-        return $this->setParameter('merchant_key', $value);
+        return $this->setParameter('merchantKey', $value);
     }
 
     public function getApiHosts()
@@ -45,7 +45,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     {
         $options = array_merge(
             array(
-                'merchant_id' => $this->getMerchantId(),
+                'merchantId' => $this->getMerchantId(),
                 'transaction_key' => $this->getMerchantKey(),
             ),
             $this->getApiHosts()
@@ -71,7 +71,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     private function arrayToNvp($request)
     {
         if (!is_array($request)) {
-            throw new Exception('Name-value pairs must be in array');
+            throw new \Exception('Name-value pairs must be in array');
         }
         // if (!array_key_exists('merchantID', $request)) {
         //     $request['merchantID'] = $this->getMerchantId();

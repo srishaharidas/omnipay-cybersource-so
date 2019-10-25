@@ -30,29 +30,29 @@ class Gateway extends AbstractGateway
     {
         return array(
             'testMode' => false,
-            'merchant_id' => '',
-            'merchant_key' => '',
+            'merchantId' => '',
+            'merchantKey' => '',
         );
     }
 
     public function getMerchantId()
     {
-        return $this->getParameter('merchant_id');
+        return $this->getParameter('merchantId');
     }
 
     public function setMerchantId($value)
     {
-        return $this->setParameter('merchant_id', $value);
+        return $this->setParameter('merchantId', $value);
     }
 
     public function getMerchantKey()
     {
-        return $this->getParameter('merchant_key');
+        return $this->getParameter('merchantKey');
     }
 
     public function setMerchantKey($value)
     {
-        return $this->setParameter('merchant_key', $value);
+        return $this->setParameter('merchantKey', $value);
     }
 
     /**
