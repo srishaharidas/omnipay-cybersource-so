@@ -1,5 +1,5 @@
 {
-    "name": "medlmobileenterprises/omnipay-cybersource-so",
+    "name": "omnipay/cybersource-so",
     "type": "library",
     "require": {
         "omnipay/common": "^2.0",

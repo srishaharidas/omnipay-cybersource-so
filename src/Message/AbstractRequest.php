@@ -45,7 +45,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     {
         $options = array_merge(
             array(
-                'merchantId' => $this->getMerchantId(),
+                'merchant_id' => $this->getMerchantId(),
                 'transaction_key' => $this->getMerchantKey(),
             ),
             $this->getApiHosts()
